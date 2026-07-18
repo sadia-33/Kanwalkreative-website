@@ -1,13 +1,17 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --pink:    #E8638C;
-      --blush:   #F5D0DE;
-      --ink:     #1A1018;
-      --mist:    #F9F4F6;
-      --white:   #f9f9f9;
-      --mid:     #6B5560;
-    }
+  --purple:  #9068f4;
+  --white:   #f9f9f9;
+  --black:   #454546;
+  --green:   #baff00;
+  --orange:  #ff7665;
+  --pink:    #ff8ceb;
+  --yellow:  #fecf01;
+  --blush:   #f5d0de;
+  --mid:     #6B5560;
+  --ink:     #454546;
+}
 
     html { scroll-behavior: smooth; }
 
