@@ -20,18 +20,18 @@
     }
 
     /* NAV */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.4rem 6vw;
-      position: sticky;
-      top: 0;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(10px);
-      z-index: 100;
-      border-bottom: 1px solid var(--blush);
-    }
+   nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem 6vw;
+  position: sticky;
+  top: 0;
+  background: rgba(249,249,249,0.95);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  border-bottom: 1px solid var(--blush);
+}
 
     .logo {
       font-family: 'Playfair Display', serif;
@@ -40,15 +40,13 @@
       text-decoration: none;
       letter-spacing: -0.5px;
     }
-
     .logo span { color: var(--pink); }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2.2rem;
-    }
-
+   nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  margin-top: 0.5rem;
+}
     nav ul a {
       text-decoration: none;
       color: var(--mid);
