@@ -140,23 +140,13 @@
       align-items: center;
     }
 
-    .hero-blob {
-      width: 420px;
-      height: 420px;
-      background: var(--purple);
-      border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 1.2rem;
-      animation: morph 7s ease-in-out infinite;
-    }
-
-    @keyframes morph {
-      0%,100% { border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%; }
-      50%      { border-radius: 40% 60% 45% 55% / 60% 40% 55% 45%; }
-    }
+    .hero-img {
+  width: 420px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(144,104,244,0.2);
+}
 
     .stat-card {
       background: var(--white);
