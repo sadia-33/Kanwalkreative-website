@@ -73,7 +73,7 @@ body {
   pointer-events: none;
 }
 .center-logo img {
-  width: 170px;
+  width: 250px;
   filter: drop-shadow(0 8px 28px rgba(144,104,244,0.28));
 }
 .tagline {
