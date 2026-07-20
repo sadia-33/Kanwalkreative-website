@@ -31,34 +31,66 @@
 </div>
 
 <script>
-  const btns = document.querySelectorAll('.btn');
+  const btns = Array.from(document.querySelectorAll('.btn'));
+  const MIN_DIST = 130;
 
   const configs = [
-    { rx: 340, ry: 155, speed: 0.00045,  start: 0    },
-    { rx: 300, ry: 135, speed: -0.0005,  start: 0.8  },
-    { rx: 360, ry: 165, speed: 0.00038,  start: 1.6  },
-    { rx: 280, ry: 125, speed: -0.00055, start: 2.4  },
-    { rx: 350, ry: 150, speed: 0.00042,  start: 3.2  },
-    { rx: 310, ry: 140, speed: -0.00048, start: 4.0  },
-    { rx: 370, ry: 160, speed: 0.00035,  start: 4.8  },
-    { rx: 290, ry: 130, speed: -0.00052, start: 5.6  },
+    { rx: 0.38, ry: 0.38, speed:  0.00030, angle: 0.00 },
+    { rx: 0.42, ry: 0.32, speed: -0.00026, angle: 0.78 },
+    { rx: 0.36, ry: 0.42, speed:  0.00034, angle: 1.57 },
+    { rx: 0.44, ry: 0.30, speed: -0.00028, angle: 2.36 },
+    { rx: 0.40, ry: 0.40, speed:  0.00022, angle: 3.14 },
+    { rx: 0.34, ry: 0.36, speed: -0.00032, angle: 3.93 },
+    { rx: 0.46, ry: 0.34, speed:  0.00024, angle: 4.71 },
+    { rx: 0.38, ry: 0.44, speed: -0.00020, angle: 5.50 },
   ];
 
-  let angles  = configs.map(c => c.start);
   let lastTime = null;
+
+  function getPos(i, w, h) {
+    const cfg = configs[i];
+    return {
+      x: w / 2 + (w * cfg.rx) * Math.cos(cfg.angle) - btns[i].offsetWidth  / 2,
+      y: h / 2 + (h * cfg.ry) * Math.sin(cfg.angle) - btns[i].offsetHeight / 2,
+    };
+  }
+
+  function clamp(val, min, max) { return Math.max(min, Math.min(max, val)); }
 
   function animate(ts) {
     if (!lastTime) lastTime = ts;
-    const dt = ts - lastTime;
+    const dt = Math.min(ts - lastTime, 32);
     lastTime = ts;
 
-    const cx = window.innerWidth  / 2;
-    const cy = window.innerHeight / 2;
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+
+    configs.forEach((c, i) => { c.angle += c.speed * dt; });
+
+    const positions = configs.map((_, i) => getPos(i, w, h));
+
+    for (let a = 0; a < positions.length; a++) {
+      for (let b = a + 1; b < positions.length; b++) {
+        const ax = positions[a].x + btns[a].offsetWidth  / 2;
+        const ay = positions[a].y + btns[a].offsetHeight / 2;
+        const bx = positions[b].x + btns[b].offsetWidth  / 2;
+        const by = positions[b].y + btns[b].offsetHeight / 2;
+        const dx = bx - ax, dy = by - ay;
+        const dist = Math.sqrt(dx*dx + dy*dy) || 1;
+        if (dist < MIN_DIST) {
+          const push = (MIN_DIST - dist) / 2;
+          const nx = dx / dist, ny = dy / dist;
+          positions[a].x -= nx * push;
+          positions[a].y -= ny * push;
+          positions[b].x += nx * push;
+          positions[b].y += ny * push;
+        }
+      }
+    }
 
     btns.forEach((btn, i) => {
-      angles[i] += configs[i].speed * dt;
-      const x = cx + configs[i].rx * Math.cos(angles[i]) - btn.offsetWidth  / 2;
-      const y = cy + configs[i].ry * Math.sin(angles[i]) - btn.offsetHeight / 2;
+      const x = clamp(positions[i].x, 8, w - btn.offsetWidth  - 8);
+      const y = clamp(positions[i].y, 8, h - btn.offsetHeight - 8);
       btn.style.left = x + 'px';
       btn.style.top  = y + 'px';
     });
