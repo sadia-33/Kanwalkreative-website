@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanwalkreative</title>
+  <link rel="icon" type="image/svg+xml" href="kanwal favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+<div class="scene">
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+  <div class="bg-blob bg-blob-3"></div>
+
+  <div class="center-logo">
+    <img src="Kanwal Kreatives - Logo Mark.png" alt="Kanwalkreative" />
+    <p class="tagline">where brands become stories</p>
+  </div>
+
+  <a href="strategy.html"     class="btn btn-purple"  id="btn1">Strategy</a>
+  <a href="homepage.html"     class="btn btn-outline" id="btn2">Organic Content</a>
+  <a href="portfolio.html"    class="btn btn-green"   id="btn3">Portfolio</a>
+  <a href="story.html"        class="btn btn-pink"    id="btn4">Story</a>
+  <a href="work-process.html" class="btn btn-orange"  id="btn5">Work Process</a>
+  <a href="book-a-call.html"  class="btn btn-yellow"  id="btn6">Book a Call</a>
+  <a href="homepage.html"     class="btn btn-dark"    id="btn7">Home Page</a>
+  <a href="contact.html"      class="btn btn-purple"  id="btn8">Contact</a>
+</div>
+
+<script>
+  const btns = document.querySelectorAll('.btn');
+
+  const configs = [
+    { rx: 340, ry: 155, speed: 0.00045,  start: 0    },
+    { rx: 300, ry: 135, speed: -0.0005,  start: 0.8  },
+    { rx: 360, ry: 165, speed: 0.00038,  start: 1.6  },
+    { rx: 280, ry: 125, speed: -0.00055, start: 2.4  },
+    { rx: 350, ry: 150, speed: 0.00042,  start: 3.2  },
+    { rx: 310, ry: 140, speed: -0.00048, start: 4.0  },
+    { rx: 370, ry: 160, speed: 0.00035,  start: 4.8  },
+    { rx: 290, ry: 130, speed: -0.00052, start: 5.6  },
+  ];
+
+  let angles  = configs.map(c => c.start);
+  let lastTime = null;
+
+  function animate(ts) {
+    if (!lastTime) lastTime = ts;
+    const dt = ts - lastTime;
+    lastTime = ts;
+
+    const cx = window.innerWidth  / 2;
+    const cy = window.innerHeight / 2;
+
+    btns.forEach((btn, i) => {
+      angles[i] += configs[i].speed * dt;
+      const x = cx + configs[i].rx * Math.cos(angles[i]) - btn.offsetWidth  / 2;
+      const y = cy + configs[i].ry * Math.sin(angles[i]) - btn.offsetHeight / 2;
+      btn.style.left = x + 'px';
+      btn.style.top  = y + 'px';
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  requestAnimationFrame(animate);
+</script>
+
+</body>
+</html>
