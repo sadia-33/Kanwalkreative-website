@@ -92,6 +92,7 @@ body {
   white-space: nowrap;
   width: 0;
   border-right: none;
+  text-decoration: none;
   animation: typewriter 2.5s steps(25) 0.5s forwards, blink 0.7s step-end 0.5s 4;
 }
 
