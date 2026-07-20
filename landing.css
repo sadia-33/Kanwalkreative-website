@@ -77,8 +77,8 @@ body {
   filter: drop-shadow(0 8px 28px rgba(144,104,244,0.28));
 }
 .tagline {
-  font-family: 'Beautifully', cursive;
-  font-size: 1.05rem;
+  font-family: 'poppins', sans serif;
+  font-size:2.05rem;
   color: #9068f4;
   margin-top: 0.3rem;
   opacity: 0.75;
