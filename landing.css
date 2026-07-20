@@ -80,7 +80,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .center-logo img {
-  width: 250px;
+  width: 120px;
   filter: drop-shadow(0 8px 28px rgba(144,104,244,0.28));
 }
 .tagline {
