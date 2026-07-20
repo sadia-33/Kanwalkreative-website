@@ -87,8 +87,15 @@
         }
       }
     }
-
+// Fix Home Page button at bottom center
+const homeBtn = document.getElementById('btn7');
+homeBtn.style.position = 'fixed';
+homeBtn.style.bottom = '30px';
+homeBtn.style.left = '50%';
+homeBtn.style.transform = 'translateX(-50%)';
+homeBtn.style.top = 'auto';
     btns.forEach((btn, i) => {
+  if (i === 6) return;
       const x = clamp(positions[i].x, 8, w - btn.offsetWidth  - 8);
       const y = clamp(positions[i].y, 8, h - btn.offsetHeight - 8);
       btn.style.left = x + 'px';
