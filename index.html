@@ -71,10 +71,10 @@
 // Fix Home Page button at bottom center
 const homeBtn = document.getElementById('btn7');
 homeBtn.style.position = 'fixed';
-homeBtn.style.bottom = '30px';
-homeBtn.style.left = '50%';
-homeBtn.style.transform = 'translateX(-50%)';
+homeBtn.style.left = 'calc(50% - ' + homeBtn.offsetWidth/2 + 'px)';
 homeBtn.style.top = 'auto';
+homeBtn.style.bottom = '30px';
+homeBtn.style.transform = 'none';
     btns.forEach((btn, i) => {
   if (i === 6) return;
       const x = clamp(positions[i].x, 8, w - btn.offsetWidth  - 8);
