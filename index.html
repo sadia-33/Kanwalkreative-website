@@ -68,25 +68,6 @@
     configs.forEach((c, i) => { c.angle += c.speed * dt; });
 
     const positions = configs.map((_, i) => getPos(i, w, h));
-
-    for (let a = 0; a < positions.length; a++) {
-      for (let b = a + 1; b < positions.length; b++) {
-        const ax = positions[a].x + btns[a].offsetWidth  / 2;
-        const ay = positions[a].y + btns[a].offsetHeight / 2;
-        const bx = positions[b].x + btns[b].offsetWidth  / 2;
-        const by = positions[b].y + btns[b].offsetHeight / 2;
-        const dx = bx - ax, dy = by - ay;
-        const dist = Math.sqrt(dx*dx + dy*dy) || 1;
-        if (dist < MIN_DIST) {
-          const push = (MIN_DIST - dist) / 2;
-          const nx = dx / dist, ny = dy / dist;
-          positions[a].x -= nx * push;
-          positions[a].y -= ny * push;
-          positions[b].x += nx * push;
-          positions[b].y += ny * push;
-        }
-      }
-    }
 // Fix Home Page button at bottom center
 const homeBtn = document.getElementById('btn7');
 homeBtn.style.position = 'fixed';
