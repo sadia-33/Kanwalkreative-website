@@ -140,12 +140,8 @@ nav ul {
 
     .hero-visual {
   position: relative;
-  display: flex;
-  align-items: stretch;
   height: 90vh;
-  margin-right: -6vw;
-  margin-top: -5rem;
-  margin-bottom: -4rem;
+  overflow: hidden;
 }
     .stat-card {
       background: var(--white);
