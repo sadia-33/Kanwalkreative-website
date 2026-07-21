@@ -36,9 +36,10 @@
     /* NAV */
    nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding: 0.4rem 6vw;
+  justify-content: space-between;
+  padding: 1rem 6vw;
   position: sticky;
   top: 0;
   background: rgba(249,249,249,0.95);
@@ -47,6 +48,12 @@
   border-bottom: 1px solid var(--blush);
 }
 
+nav ul {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+  margin: 0;
+}
     .logo {
       font-family: 'Famog', serif;
       font-size: 1.5rem;
