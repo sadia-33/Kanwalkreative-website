@@ -88,7 +88,10 @@ nav ul {
   overflow: hidden;
 }
 .hero-text {
-  padding-top: 100px;
+  padding-top: 120px;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  padding-right: 2rem;
 }
     .hero-text h1 {
       font-family: 'Famog', serif;
@@ -144,6 +147,7 @@ nav ul {
   position: relative;
   height: 100vh;
   overflow: hidden;
+  align-self: stretch;
 }
 .hero-img {
   width: 100%;
@@ -378,8 +382,13 @@ nav ul {
   color: var(--ink);
   box-shadow: 0 4px 20px rgba(144,104,244,0.18);
   white-space: nowrap;
+  animation: floatTag 3s ease-in-out infinite;
 }
+.tag-1 { top: 12%; left: 30px; animation-delay: 0s; }
+.tag-2 { top: 48%; left: 50px; animation-delay: 1s; }
+.tag-3 { bottom: 15%; left: 30px; animation-delay: 2s; }
 
-.tag-1 { top: 15%; left: 20px; }
-.tag-2 { top: 50%; left: 40px; }
-.tag-3 { bottom: 20%; left: 20px; }
+@keyframes floatTag {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
