@@ -151,10 +151,9 @@
 }
     .stat-card {
       background: var(--white);
-      border-radius: 14px;
+      border-radius: 19px;
       padding: 1rem 1.6rem;
       text-align: center;
-      box-shadow: 0 4px 24px rgba(232,99,140,0.12);
       min-width: 160px;
     }
 
