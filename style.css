@@ -89,17 +89,16 @@ nav ul {
   overflow: visible;
 }
 .hero-text {
-  padding-top: 120px;
-  padding-bottom: 2rem;
-  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 1rem;
   padding-right: 2rem;
 }
     .hero-text h1 {
       font-family: 'Famog', serif;
-      font-size: clamp(2.8rem, 5vw, 4.2rem);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
       line-height: 1.15;
       letter-spacing: -1px;
-      margin-bottom: 1.4rem;
+      margin-bottom: 0.8rem;
     }
 
     .hero-text h1 em {
@@ -109,9 +108,9 @@ nav ul {
 
     .hero-text p {
       color: var(--mid);
-      font-size: 1.1rem;
+      font-size: 1rem;
       max-width: 440px;
-      margin-bottom: 2.2rem;
+      margin-bottom: 1.2rem;
       font-weight: 300;
     }
 
@@ -333,7 +332,7 @@ nav ul {
 .hero-cards {
   display: flex;
   gap: 1rem;
-  margin-top: 2.5rem;
+  margin-top: 1.2rem;
   flex-wrap: wrap;
 }
 
