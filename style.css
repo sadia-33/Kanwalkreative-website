@@ -81,14 +81,13 @@ nav ul {
 
     /* HERO */
     .hero {
-      min-height: 90vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 3rem;
-      padding: 5rem 6vw 4rem;
-    }
-
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 0;
+  padding: 5rem 0 4rem 6vw;
+}
     .hero-text h1 {
       font-family: 'Famog', serif;
       font-size: clamp(2.8rem, 5vw, 4.2rem);
