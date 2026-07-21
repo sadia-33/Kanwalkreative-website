@@ -41,13 +41,16 @@
   position: absolute;
   width: 100%;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 6vw;
 }
-
 nav ul {
+  list-style: none;
   display: flex;
   gap: 2.2rem;
-  list-style: none;
-  margin: 0;
+  margin-top: -10px;  /* ← delete this whole block */
 }
     .logo {
       font-family: 'Famog', serif;
@@ -83,6 +86,9 @@ nav ul {
   gap: 0;
   padding: 0 0 0 6vw;
   overflow: hidden;
+}
+.hero-text {
+  padding-top: 100px;
 }
     .hero-text h1 {
       font-family: 'Famog', serif;
