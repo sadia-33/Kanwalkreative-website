@@ -34,18 +34,13 @@
     }
 
     /* NAV */
-   nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 6vw;
-  position: sticky;
-  top: 0;
-  background: rgba(249,249,249,0.95);
-  backdrop-filter: blur(10px);
+  nav {
+  background: transparent;
+  backdrop-filter: none;
+  border-bottom: none;
+  position: absolute;
+  width: 100%;
   z-index: 100;
-  border-bottom: 1px solid var(--blush);
 }
 
 nav ul {
@@ -81,7 +76,7 @@ nav ul {
 
     /* HERO */
     .hero {
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -141,7 +136,7 @@ nav ul {
 
     .hero-visual {
   position: relative;
-  height: calc(100vh - 80px);
+  height: 100vh;
   overflow: hidden;
 }
 .hero-img {
