@@ -64,7 +64,7 @@
       transition: color 0.2s;
     }
 
-    nav ul a:hover { color: var(--white); }
+    nav ul a:hover { color: var(--green); }
 
     .btn-primary {
       display: inline-block;
