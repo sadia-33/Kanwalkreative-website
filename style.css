@@ -166,7 +166,7 @@
   position: relative;
   max-height: 90vh;
   overflow: hidden;
-  align-self: start;
+  align-self: stretch;
 }
 .hero-img {
   width: 100%;
