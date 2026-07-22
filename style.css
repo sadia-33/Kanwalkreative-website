@@ -112,7 +112,7 @@
   padding-left: 6vw;
 }
     .hero-text h1 {
-      font-family: 'Nunito', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: clamp(2.2rem, 4vw, 3.5rem);
       line-height: 1.15;
       margin-bottom: 0.8rem;
