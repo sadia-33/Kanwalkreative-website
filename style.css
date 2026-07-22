@@ -119,6 +119,7 @@
       font-style: Regular;
       color: var(--purple);
       font-size: 1.3em;
+      letter-spacing: 2px;
     }
 
     .hero-text p {
