@@ -186,7 +186,7 @@
 
 .hero-card {
   background: var(--white);
-  border: 1.5px solid var(--blush);
+  border: 2px solid var(--blush);
   border-radius: 16px;
   padding: 1.4rem 1.6rem;
   flex: 1;
