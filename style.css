@@ -108,7 +108,7 @@
   padding-left: 6vw;
 }
     .hero-text h1 {
-      font-family: 'Famog', serif;
+      font-family: 'Nunito', sans-serif;
       font-size: clamp(2.2rem, 4vw, 3.5rem);
       line-height: 1.15;
       letter-spacing: -1px;
