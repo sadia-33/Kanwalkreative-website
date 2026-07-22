@@ -137,9 +137,15 @@
   font-weight: 500;
   font-size: 0.75rem;
   transition: transform 0.2s, opacity 0.2s;
+  border: 1.5px solid transparent;
 }
 
-.btn-hero:hover { transform: translateY(-2px); opacity: 0.9; }
+.btn-hero:hover {
+  background: var(--white);
+  color: var(--purple);
+  border: 1.5px solid var(--purple);
+  opacity: 1;
+}
 
     .btn-ghost {
       display: inline-block;
