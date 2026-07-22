@@ -135,11 +135,12 @@
   border-radius: 100px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   transition: transform 0.2s, opacity 0.2s;
 }
 
 .btn-hero:hover { transform: translateY(-2px); opacity: 0.9; }
+
     .btn-ghost {
       display: inline-block;
       border: 1.5px solid var(--purple);
@@ -148,7 +149,7 @@
       border-radius: 100px;
       text-decoration: none;
       font-weight: 500;
-      font-size: 0.95rem;
+      font-size: 0.75rem;
       margin-left: 1rem;
       transition: background 0.2s, color 0.2s;
     }
