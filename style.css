@@ -154,7 +154,7 @@
   object-fit: cover;
   object-position: center top;
   display: block;
-  clip-path: inset(100px 0 0 0);
+  clip-path: inset(150px 0 0 0);
 }
 
     /* SERVICES */
