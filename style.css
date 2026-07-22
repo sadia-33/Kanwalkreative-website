@@ -380,9 +380,9 @@
   white-space: nowrap;
   animation: floatTag 3s ease-in-out infinite;
 }
-.tag-1 { top: 12%; left: 30px; animation-delay: 0s; }
-.tag-2 { top: 48%; left: 50px; animation-delay: 1s; }
-.tag-3 { bottom: 15%; left: 30px; animation-delay: 2s; }
+.tag-1 { top: 18%; left: 20px; animation-delay: 0s; }
+.tag-2 { top: 50%; right: 20px; left: auto; animation-delay: 1s; }
+.tag-3 { bottom: 18%; left: 40px; animation-delay: 2s; }
 
 @keyframes floatTag {
   0%, 100% { transform: translateY(0); }
