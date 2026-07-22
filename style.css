@@ -164,7 +164,7 @@
 
     .hero-visual {
   position: relative;
-  max-height: 90vh;
+  max-height: 96vh;
   overflow: hidden;
   align-self: stretch;
 }
