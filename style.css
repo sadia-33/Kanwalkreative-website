@@ -118,6 +118,7 @@
     .hero-text h1 em {
       font-style: Regular;
       color: var(--purple);
+      font-size: 1.3em;
     }
 
     .hero-text p {
