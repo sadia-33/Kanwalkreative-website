@@ -79,7 +79,11 @@
     }
 
     .btn-primary:hover { transform: translateY(-2px); opacity: 0.9; }
-
+.logo-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
     .logo {
       font-family: 'Famog', serif;
       font-size: 1.5rem;
