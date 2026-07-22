@@ -46,25 +46,14 @@
   justify-content: space-between;
   padding: 1rem 6vw;
 }
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2.2rem;
-  margin-top: -10px;  /* ← delete this whole block */
-}
-    .logo {
-      font-family: 'Famog', serif;
-      font-size: 1.5rem;
-      color: var(--ink);
-      text-decoration: none;
-      letter-spacing: -0.5px;
-    }
-    .logo span { color:var(--purple); }
   nav ul {
   list-style: none;
   display: flex;
   gap: 2.2rem;
-  margin-top: -10px;  /* ← delete this whole block */
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.10);
+  border-radius: 999px;
+  padding: 6px 10px;
 }
     nav ul a {
       text-decoration: none;
@@ -76,6 +65,16 @@ nav ul {
     }
 
     nav ul a:hover { color: var(--purple); }
+
+    .logo {
+      font-family: 'Famog', serif;
+      font-size: 1.5rem;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span { color:var(--purple); }
 
     /* HERO */
     .hero {
