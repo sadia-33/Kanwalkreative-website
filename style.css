@@ -145,7 +145,7 @@
     .hero-visual {
   position: relative;
   min-height: 100vh;
-  overflow: hidden;
+  overflow: visible;
   align-self: stretch;
 }
 .hero-img {
