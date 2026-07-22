@@ -53,7 +53,7 @@
   background: var(--white);
   border:none;
   border-radius: 999px;
-  padding: 6px 10px;
+  padding: 12px 12px;
 }
     nav ul a {
       text-decoration: none;
