@@ -223,9 +223,10 @@
 
     /* SERVICES */
     .services {
-      padding: 5rem 6vw;
-      background: var(--mist);
-    }
+  padding: 5rem 6vw;
+  background: var(--mist);
+  text-align: center;
+}
 
     .section-label {
       font-size: 0.78rem;
