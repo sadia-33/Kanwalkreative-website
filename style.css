@@ -127,7 +127,19 @@
       margin-bottom: 1.2rem;
       font-weight: 300;
     }
+.btn-hero {
+  display: inline-block;
+  background: var(--purple);
+  color: var(--white);
+  padding: 0.6rem 1.5rem;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: transform 0.2s, opacity 0.2s;
+}
 
+.btn-hero:hover { transform: translateY(-2px); opacity: 0.9; }
     .btn-ghost {
       display: inline-block;
       border: 1.5px solid var(--purple);
