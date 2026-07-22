@@ -116,7 +116,7 @@
     }
 
     .hero-text h1 em {
-      font-style: italic;
+      font-style: Regular;
       color: var(--purple);
     }
 
