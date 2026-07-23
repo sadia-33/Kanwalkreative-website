@@ -222,6 +222,18 @@
 }
 
     /* SERVICES */
+.services .section-label {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.78rem;
+}
+
+.services .section-title {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+}
   .industry-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
