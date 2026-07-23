@@ -222,13 +222,13 @@
 }
 
     /* SERVICES */
-.services .section-label {
+.section-label {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 0.78rem;
 }
 
-.services .section-title {
+.section-title {
   text-align: center;
   font-family: 'Nunito', sans-serif;
   font-size: clamp(2rem, 4vw, 3.5rem);
