@@ -241,10 +241,11 @@
   margin-top: 3rem;
   background: var(--purple);
   border-radius: 20px;
-  padding: 4rem 3rem;
-  min-height: 500px;
+  padding: 6rem 3rem;
+   min-height: 600px;
   align-content: center;
   width: 100%;
+   text-align: center;
 }
 
 .industry-item {
@@ -257,6 +258,12 @@
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: background 0.2s;
+}
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ← force 4 columns */
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .industry-item:hover {
