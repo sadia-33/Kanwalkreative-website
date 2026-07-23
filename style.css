@@ -222,66 +222,29 @@
 }
 
     /* SERVICES */
-    .services {
-  padding: 5rem 6vw;
-  background: var(--mist);
-  text-align: center;
+   .industry-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 3rem;
 }
 
-    .section-label {
-      font-size: 0.78rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: var(--purple);
-      margin-bottom: 0.6rem;
-    }
-
-    .section-title {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  line-height: 1.2;
-  margin-bottom: 3rem;
+.industry-item {
+  background: var(--white);
+  border: 1.5px solid var(--blush);
+  color: var(--ink);
+  padding: 0.6rem 1.4rem;
+  border-radius: 100px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
 }
 
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .service-card {
-      background: var(--white);
-      border-radius: 20px;
-      padding: 2.2rem 2rem;
-      border: 1px solid var(--blush);
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(232,99,140,0.12);
-    }
-
-    .service-icon {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .service-card h3 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.3rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .service-card p {
-      color: var(--mid);
-      font-size: 0.9rem;
-      font-weight: 300;
-      line-height: 1.65;
-    }
-
+.industry-item:hover {
+  background: var(--purple);
+  color: var(--white);
+}
     /* INDUSTRIES */
     .industries {
       padding: 5rem 6vw;
