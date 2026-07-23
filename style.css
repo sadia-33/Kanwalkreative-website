@@ -234,13 +234,17 @@
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 700;
 }
-  .industry-list {
+ .industry-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   margin-top: 3rem;
   background: var(--purple);
-  padding: 2rem;
+  border-radius: 20px;
+  padding: 4rem 3rem;
+  min-height: 500px;
+  align-content: center;
+  width: 100%;
 }
 
 .industry-item {
