@@ -279,7 +279,7 @@
 .s1 { background: var(--white); color: #454546;     transform: rotate(-12deg) translateX(-310px); z-index: 1; }
 .s2 { background: var(--orange); color: #fff;     transform: rotate(-8deg)  translateX(-205px); z-index: 2; }
 .s3 { background: var(--yellow); color: #3a2a00; transform: rotate(-4deg)  translateX(-103px); z-index: 3; }
-.s4 { background: var(--pink);   color: #4a0035; transform: rotate(0deg)   translateX(0px);    z-index: 9; width: 195px; height: 270px; }
+.s4 { background: var(--pink);   color: #4a0035; transform: rotate(0deg)   translateX(0px);    z-index: 9; }
 .s5 { background: var(--green);  color: #263900; transform: rotate(4deg)   translateX(103px);  z-index: 3; }
 .s6 { background: var(--white); color: #454546;     transform: rotate(8deg)   translateX(205px);  z-index: 2; }
 .s7 { background: var(--green); color: #fff;     transform: rotate(12deg)  translateX(310px);  z-index: 1; }
