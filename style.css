@@ -273,9 +273,9 @@
   transition: filter 0.2s;
   box-shadow: 0 0 0 2px rgba(186, 255, 0, 0.5), 0 0 25px rgba(186, 255, 0, 0.3);
 }
-
-.sc-name { font-size: 22px; font-weight: 700; line-height: 1.2; }
-.sc-icon { font-size: 30px; align-self: flex-end; }
+.sc-num  { font-size: 13px; font-weight: 600; opacity: 0.65; }
+sc-name { font-size: 28px; font-weight: 700; line-height: 1.2; }
+.sc-icon { font-size: 38px; align-self: flex-start; } /* ← left aligned */
 
 .s1 { background: var(--white);  color: #454546;  transform: rotate(-5deg) translateX(-560px); z-index: 1; }
 .s2 { background: var(--orange); color: #fff;     transform: rotate(-3deg) translateX(-375px); z-index: 2; }
