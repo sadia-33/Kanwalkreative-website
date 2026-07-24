@@ -274,7 +274,7 @@
   box-shadow: 0 0 0 2px rgba(186, 255, 0, 0.5), 0 0 25px rgba(186, 255, 0, 0.3);
 }
 .sc-num  { font-size: 13px; font-weight: 600; opacity: 0.65; }
-sc-name { font-size: 38px; font-weight: 700; line-height: 1.2; }
+sc-name { font-size: 38px; font-weight: 700; line-height: 1.2; font-family: "Poppins" sans-serif}
 .sc-icon { font-size: 38px; align-self: flex-start; }
 .icon-center { align-self: center; }
 .icon-right  { align-self: flex-end; }
