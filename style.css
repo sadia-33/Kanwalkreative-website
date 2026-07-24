@@ -223,8 +223,8 @@
 
     /* SERVICES */
 .industries {
-  background: #1a0a2e;
-  padding: 5rem 6vw 4rem;
+  background: var(--purple); 
+  padding: 5rem 6vw 6rem;
   text-align: center;
   overflow: hidden;
 }
@@ -253,20 +253,19 @@
 
 .fan {
   position: relative;
-  height: 500px; /* ← was 280px */
+  height: 420px;
   display: flex;
-  align-items: flex-end;
+  align-items: center; /* ← was flex-end, pushing cards down */
   justify-content: center;
-  margin: 2.5rem 0 0;
+  margin: 2.5rem 0 2rem;
 }
 
 .sc {
-  width: 180px;       /* ← was 110px */
-  height: 260px;      /* ← was 155px */
+  width: 170px;
+  height: 240px;
   border-radius: 24px;
   padding: 20px 18px;
-  transform-origin: bottom center;
-  bottom: 0;
+  transform-origin: center center; /* ← was bottom center */
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -277,13 +276,13 @@
 .sc-name { font-size: 22px; font-weight: 700; line-height: 1.2; }
 .sc-icon { font-size: 30px; align-self: flex-end; }
 
-.s1 { transform: rotate(-24deg) translateX(-320px); z-index: 1; }
-.s2 { transform: rotate(-16deg) translateX(-215px); z-index: 2; }
-.s3 { transform: rotate(-8deg)  translateX(-108px); z-index: 3; }
-.s4 { transform: rotate(0deg)   translateX(0px);    z-index: 9; width: 200px; height: 285px; }
-.s5 { transform: rotate(8deg)   translateX(108px);  z-index: 3; }
-.s6 { transform: rotate(16deg)  translateX(215px);  z-index: 2; }
-.s7 { transform: rotate(24deg)  translateX(320px);  z-index: 1; }
+.s1 { transform: rotate(-24deg) translateX(-310px); z-index: 1; }
+.s2 { transform: rotate(-16deg) translateX(-205px); z-index: 2; }
+.s3 { transform: rotate(-8deg)  translateX(-103px); z-index: 3; }
+.s4 { transform: rotate(0deg)   translateX(0px);    z-index: 9; width: 195px; height: 270px; }
+.s5 { transform: rotate(8deg)   translateX(103px);  z-index: 3; }
+.s6 { transform: rotate(16deg)  translateX(205px);  z-index: 2; }
+.s7 { transform: rotate(24deg)  translateX(310px);  z-index: 1; }
 
     /* WHY US */
     .why {
