@@ -253,7 +253,7 @@
 
 .fan {
   position: relative;
-  height: 500px;
+  height: 500px; /* ← was 280px */
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -261,32 +261,29 @@
 }
 
 .sc {
+  width: 180px;       /* ← was 110px */
+  height: 260px;      /* ← was 155px */
+  border-radius: 24px;
+  padding: 20px 18px;
+  transform-origin: bottom center;
+  bottom: 0;
   position: absolute;
-  width: 180px;
-  height: 260px;
-  border-radius: 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 13px 12px;
-  transform-origin: bottom center;
-  bottom: 0;
   transition: filter 0.2s;
 }
 
-.sc:hover { filter: brightness(1.15); }
+.sc-name { font-size: 22px; font-weight: 700; line-height: 1.2; }
+.sc-icon { font-size: 30px; align-self: flex-end; }
 
-.sc-num  { font-size: 10px; font-weight: 600; opacity: 0.65; }
-.sc-name { font-size: 15px; font-weight: 700; line-height: 1.2; }
-.sc-icon { font-size: 20px; align-self: flex-end; }
-
-.s1 { background: #9068f4; color: #fff;     transform: rotate(-24deg) translateX(-195px); z-index: 1; }
-.s2 { background: #ff7665; color: #fff;     transform: rotate(-16deg) translateX(-130px); z-index: 2; }
-.s3 { background: #fecf01; color: #3a2a00; transform: rotate(-8deg)  translateX(-65px);  z-index: 3; }
-.s4 { background: #ff8ceb; color: #4a0035; transform: rotate(0deg)   translateX(0px);    z-index: 9; width: 124px; height: 172px; }
-.s5 { background: #baff00; color: #263900; transform: rotate(8deg)   translateX(65px);   z-index: 3; }
-.s6 { background: #9068f4; color: #fff;     transform: rotate(16deg)  translateX(130px);  z-index: 2; }
-.s7 { background: #ff7665; color: #fff;     transform: rotate(24deg)  translateX(195px);  z-index: 1; }
+.s1 { transform: rotate(-24deg) translateX(-320px); z-index: 1; }
+.s2 { transform: rotate(-16deg) translateX(-215px); z-index: 2; }
+.s3 { transform: rotate(-8deg)  translateX(-108px); z-index: 3; }
+.s4 { transform: rotate(0deg)   translateX(0px);    z-index: 9; width: 200px; height: 285px; }
+.s5 { transform: rotate(8deg)   translateX(108px);  z-index: 3; }
+.s6 { transform: rotate(16deg)  translateX(215px);  z-index: 2; }
+.s7 { transform: rotate(24deg)  translateX(320px);  z-index: 1; }
 
     /* WHY US */
     .why {
