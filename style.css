@@ -224,7 +224,7 @@
     /* SERVICES */
 .industries {
   background: var(--purple); 
-  padding: 90px 90px 200px;
+  padding: 90px 90px 30px;
   text-align: center;
   overflow: hidden;
 }
