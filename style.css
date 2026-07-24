@@ -262,7 +262,7 @@
 
 .sc {
  width: 220px;
-  height: 300px;  
+  height: 550px;
   border-radius: 24px;
   padding: 20px 18px;
   transform-origin: center center; /* ← was bottom center */
