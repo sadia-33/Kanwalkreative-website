@@ -286,7 +286,7 @@
 .s4 { background: var(--pink);   color: #4a0035; transform: rotate(0deg)  translateX(0px);    z-index: 9; width: 275px; height: 400px; }
 .s5 { background: var(--green);  color: #263900; transform: rotate(1deg)  translateX(190px);  z-index: 3; }
 .s6 { background: var(--white);  color: #3a2a00; transform: rotate(3deg)  translateX(375px);  z-index: 2; }
-.s7 { background: var(--green);  color: #263900; transform: rotate(5deg)  translateX(560px);  z-index: 1; }
+.s7 { background: var(--black);  color: #f9f9f9; transform: rotate(5deg)  translateX(560px);  z-index: 1; }
     /* WHY US */
     .why {
       padding: 5rem 6vw;
