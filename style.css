@@ -226,7 +226,7 @@
   background: var(--purple); 
   padding: 90px 90px 30px;
   text-align: center;
-  overflow: hidden;
+ overflow: visible;
 }
 
 .ind-label {
