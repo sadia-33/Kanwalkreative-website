@@ -287,6 +287,15 @@
 .s5 { background: var(--green);  color: #263900; transform: rotate(1deg)  translateX(190px);  z-index: 3; }
 .s6 { background: var(--white);  color: #3a2a00; transform: rotate(3deg)  translateX(375px);  z-index: 2; }
 .s7 { background: var(--black);  color: #f9f9f9; transform: rotate(5deg)  translateX(560px);  z-index: 1; }
+.s5 .sc-name, .s6 .sc-name, .s7 .sc-name {
+  align-self: flex-end;
+  text-align: right;
+}
+.s1 .sc-name, .s2 .sc-name, .s3 .sc-name {
+  align-self: flex-start;
+  text-align: left;
+}
+
     /* WHY US */
     .why {
       padding: 5rem 6vw;
