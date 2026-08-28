@@ -504,7 +504,17 @@
   background: var(--ink);
   color: var(--white);
 }
-
+.subscribe-embed {
+  background: rgba(186, 255, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(186, 255, 0, 0.4);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(186, 255, 0, 0.2);
+  width: 480px;
+  flex-shrink: 0;
+}
 @media (max-width: 768px) {
   .subscribe-inner { flex-direction: column; }
   .subscribe-form { width: 100%; flex-direction: column; gap: 0.8rem; }
