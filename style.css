@@ -471,14 +471,14 @@
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   width: 280px;
-  background: rgba(255,255,255,0.1);
+  background: var(--green);
   color: var(--green);
   border: 1.5px solid rgba(255,255,255,0.15);
   border-right: none;
 }
 
 .subscribe-form input::placeholder {
-  color: rgba(255,255,255,0.35);
+  color: var(--black);
 }
 
 .subscribe-form button {
