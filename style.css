@@ -510,9 +510,9 @@
   -webkit-backdrop-filter: blur(12px);
   border: 1.5px solid rgba(186, 255, 0, 0.4);
   border-radius: 24px;
-  padding: 2rem;
+  padding: 2.5rem;
   box-shadow: 0 8px 32px rgba(186, 255, 0, 0.2);
-  width: 480px;
+  width: 620px;        /* was 480px */
   flex-shrink: 0;
 }
 @media (max-width: 768px) {
