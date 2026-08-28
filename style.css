@@ -433,14 +433,10 @@
 }
 
 .subscribe-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  flex-wrap: wrap;
-}
-.subscribe-text {
-  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: flex-start;
 }
 .subscribe-text h2 {
   font-family: 'Poppins', sans-serif;
@@ -514,9 +510,6 @@
   border-radius: 24px;
   padding: 3rem;
   box-shadow: 0 8px 32px rgba(186, 255, 0, 0.2);
-  flex: 1;
-  min-width: 50%;
-  flex-shrink: 0;
   overflow: hidden;
 }
 @media (max-width: 768px) {
