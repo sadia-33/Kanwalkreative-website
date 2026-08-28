@@ -504,11 +504,16 @@
   .subscribe-inner { flex-direction: column; }
   .subscribe-form { width: 100%; flex-direction: column; gap: 0.8rem; }
   .subscribe-form input { 
+     padding: 1.1rem 1.8rem;
+      width: 380px;
+     font-size: 1rem;
     border-radius: 100px; 
     border-right: 1.5px solid rgba(255,255,255,0.15);
     width: 100%; 
   }
-  .subscribe-form button { border-radius: 100px; }
+  .subscribe-form button { border-radius: 100px;
+                         padding: 1.1rem 2.4rem;
+  font-size: 1rem;}
 }
 /* responsive */
 @media (max-width: 768px) {
