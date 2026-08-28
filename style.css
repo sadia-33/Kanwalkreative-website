@@ -223,7 +223,7 @@
 
     /* SERVICES */
 .industries {
-  background: var(--purple); 
+  background: var(-white); 
   padding: 90px 0 30px;
   text-align: center;
  overflow: visible;
@@ -234,7 +234,7 @@
   font-family: 'Poppins';
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 0;
 }
 
@@ -242,13 +242,13 @@
   font-family: 'Poppins', sans-serif;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
-  color: #fff;
+  color: var(--black);
   margin-top: 1.5rem;
 }
 
 .ind-sub {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(0, 0, 0, 0.45);
   margin-top: 0.5rem;
 }
 
