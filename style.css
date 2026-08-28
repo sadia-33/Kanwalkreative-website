@@ -429,7 +429,7 @@
 /* SUBSCRIBE */
 .subscribe-section {
   background: var(--white);
-  padding: 5rem 6vw;
+  padding: 6rem 6vw 5rem;
 }
 
 .subscribe-inner {
