@@ -426,7 +426,90 @@
   background: var(--purple);
   flex-shrink: 0;
 }
+/* SUBSCRIBE */
+.subscribe-section {
+  background: var(--ink);
+  padding: 5rem 6vw;
+}
 
+.subscribe-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.subscribe-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+  margin: 0.5rem 0 1rem;
+}
+
+.subscribe-text p {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.95rem;
+  max-width: 420px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.subscribe-form input {
+  padding: 0.85rem 1.4rem;
+  border-radius: 100px 0 0 100px;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  width: 280px;
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.15);
+  border-right: none;
+}
+
+.subscribe-form input::placeholder {
+  color: rgba(255,255,255,0.35);
+}
+
+.subscribe-form button {
+  padding: 0.85rem 1.8rem;
+  border-radius: 0 100px 100px 0;
+  border: none;
+  background: var(--purple);
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.subscribe-form button:hover {
+  background: var(--green);
+  color: var(--ink);
+}
+
+@media (max-width: 768px) {
+  .subscribe-inner { flex-direction: column; }
+  .subscribe-form { width: 100%; flex-direction: column; gap: 0.8rem; }
+  .subscribe-form input { 
+    border-radius: 100px; 
+    border-right: 1.5px solid rgba(255,255,255,0.15);
+    width: 100%; 
+  }
+  .subscribe-form button { border-radius: 100px; }
+}
 /* responsive */
 @media (max-width: 768px) {
   .services-inner {
