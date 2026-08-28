@@ -517,6 +517,7 @@
   flex: 1;
   min-width: 50%;
   flex-shrink: 0;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .subscribe-inner { flex-direction: column; }
