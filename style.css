@@ -428,7 +428,7 @@
 }
 /* SUBSCRIBE */
 .subscribe-section {
-  background: var(--ink);
+  background: var(--white);
   padding: 5rem 6vw;
 }
 
@@ -517,34 +517,7 @@
     gap: 2rem;
   }
 }
-    /* WHY US */
-    .why {
-      padding: 5rem 6vw;
-      background: var(--ink);
-      color: var(--white);
-    }
 
-    .why .section-title { color: var(--white); }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .why-item h4 {
-      font-family: 'Famog', serif;
-      font-size: 1.1rem;
-      color: var(--purple);
-      margin-bottom: 0.5rem;
-    }
-
-    .why-item p {
-      color: #b0909c;
-      font-size: 0.88rem;
-      font-weight: 300;
-    }
 
     /* CTA */
     .cta-section {
