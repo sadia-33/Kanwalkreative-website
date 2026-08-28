@@ -401,13 +401,6 @@
   color: var(--ink);
 }
 
-.srv-detail > p {
-  color: var(--mid);
-  font-size: 0.97rem;
-  line-height: 1.7;
-  font-weight: 300;
-}
-
 .srv-bullets {
   list-style: none;
   display: flex;
