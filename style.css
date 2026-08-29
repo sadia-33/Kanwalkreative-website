@@ -556,18 +556,131 @@
     }
 
     /* FOOTER */
-    footer {
-      padding: 2rem 6vw;
-      border-top: 1px solid var(--blush);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.85rem;
-      color: var(--mid);
-    }
+    /* FOOTER NEW */
+.footer-new {
+  background: #111;
+  color: var(--white);
+  padding: 0 0 2rem;
+  overflow: hidden;
+  user-select: none;
+}
 
-    footer a { color: var(--purple); text-decoration: none; }
+/* Marquee */
+.footer-marquee {
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding: 1.5rem 0;
+}
 
+.footer-marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+  font-family: 'Famog', serif;
+  font-size: clamp(3rem, 8vw, 7rem);
+  letter-spacing: -2px;
+  color: var(--white);
+  align-items: center;
+}
+
+.footer-marquee-track .star {
+  font-size: 1.5rem;
+  color: var(--green);
+}
+
+/* Meta row */
+.footer-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6vw;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.6;
+}
+
+/* Sticker area */
+.footer-stickers {
+  position: relative;
+  height: 280px;
+  margin: 0 6vw;
+}
+
+/* Draggable base */
+.drag { cursor: grab; position: absolute; }
+.drag:active { cursor: grabbing; }
+
+/* Round stickers */
+.sticker-round {
+  width: 110px;
+  height: 110px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  position: absolute;
+  box-shadow: 2px 4px 16px rgba(0,0,0,0.3);
+}
+
+.sticker-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333;
+  animation: spin 8s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Pill stickers */
+.sticker-pill {
+  background: var(--white);
+  color: #111;
+  padding: 0.9rem 2rem;
+  border-radius: 100px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 2px 4px 16px rgba(0,0,0,0.3);
+  white-space: nowrap;
+}
+
+/* Big email */
+.footer-email {
+  text-align: center;
+  padding: 1rem 6vw 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 1rem;
+}
+
+.footer-email a {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.2rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  color: rgba(255,255,255,0.2);
+  text-decoration: none;
+  letter-spacing: -1px;
+  transition: color 0.3s;
+}
+
+.footer-email a:hover { color: var(--green); }
     /* RESPONSIVE */
     @media (max-width: 768px) {
       .hero { grid-template-columns: 1fr; text-align: center; padding-top: 3rem; }
