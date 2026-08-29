@@ -578,14 +578,14 @@
   width: max-content;
   animation: marquee 18s linear infinite;
   font-family: 'Famog', serif;
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(4rem, 10vw, 8rem);
   letter-spacing: -2px;
   color: var(--white);
   align-items: center;
 }
 
 .footer-marquee-track .star {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--green);
 }
 
