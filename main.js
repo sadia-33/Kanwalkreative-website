@@ -8,9 +8,11 @@ document.querySelectorAll('.srv-item').forEach(item => {
   });
 });
 
-// Draggable stickers
-document.querySelectorAll('.drag').forEach(el => {
-  let dragging = false, ox = 0, oy = 0;
+// Draggable vinyl only
+document.querySelectorAll('.vinyl').forEach(el => {
+  let dragging = false;
+  let ox = 0, oy = 0;
+
   el.addEventListener('mousedown', e => {
     dragging = true;
     ox = e.clientX - el.offsetLeft;
@@ -18,10 +20,12 @@ document.querySelectorAll('.drag').forEach(el => {
     el.style.zIndex = 99;
     e.preventDefault();
   });
+
   document.addEventListener('mousemove', e => {
     if (!dragging) return;
     el.style.left = (e.clientX - ox) + 'px';
     el.style.top  = (e.clientY - oy) + 'px';
   });
+
   document.addEventListener('mouseup', () => { dragging = false; });
 });
