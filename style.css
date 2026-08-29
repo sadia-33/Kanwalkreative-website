@@ -558,7 +558,7 @@
     /* FOOTER */
     /* FOOTER NEW */
 .footer-new {
-  background: #111;
+  background: var(--purple);
   color: var(--white);
   padding: 0 0 2rem;
   overflow: hidden;
@@ -578,7 +578,7 @@
   width: max-content;
   animation: marquee 18s linear infinite;
   font-family: 'Famog', serif;
-  font-size: clamp(3rem, 8vw, 7rem);
+  font-size: clamp(3rem, 8vw, 6rem);
   letter-spacing: -2px;
   color: var(--white);
   align-items: center;
@@ -593,56 +593,69 @@
 .footer-meta {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 6vw;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 1.2rem 6vw;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.6);
   line-height: 1.6;
 }
 
 /* Sticker area */
 .footer-stickers {
   position: relative;
-  height: 280px;
+  height: 220px;
   margin: 0 6vw;
 }
 
-/* Draggable base */
 .drag { cursor: grab; position: absolute; }
 .drag:active { cursor: grabbing; }
 
-/* Round stickers */
+/* Vinyl sticker */
 .sticker-round {
   width: 110px;
   height: 110px;
-  background: var(--white);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
   position: absolute;
-  box-shadow: 2px 4px 16px rgba(0,0,0,0.3);
+  box-shadow: 2px 4px 20px rgba(0,0,0,0.4);
+  background: conic-gradient(
+    #1a1a1a 0deg, #2a2a2a 30deg,
+    #111 60deg, #333 90deg,
+    #1a1a1a 120deg, #222 150deg,
+    #111 180deg, #2a2a2a 210deg,
+    #1a1a1a 240deg, #333 270deg,
+    #111 300deg, #222 330deg,
+    #1a1a1a 360deg
+  );
+  animation: vinyl-spin 4s linear infinite;
 }
 
-.sticker-ring {
+.sticker-round::before {
+  content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  font-size: 0.5rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #333;
-  animation: spin 8s linear infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: var(--purple);
+  border: 3px solid rgba(255,255,255,0.2);
+  z-index: 2;
 }
 
-@keyframes spin {
+.sticker-round::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 3;
+}
+
+@keyframes vinyl-spin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
@@ -650,37 +663,23 @@
 /* Pill stickers */
 .sticker-pill {
   background: var(--white);
-  color: #111;
-  padding: 0.9rem 2rem;
+  color: var(--purple);
+  padding: 1rem 2.4rem;
   border-radius: 100px;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,0.3);
+  letter-spacing: 0.5px;
+  box-shadow: 2px 4px 16px rgba(0,0,0,0.2);
   white-space: nowrap;
-}
-
-/* Big email */
-.footer-email {
-  text-align: center;
-  padding: 1rem 6vw 0;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  margin-top: 1rem;
-}
-
-.footer-email a {
-  font-family: 'Poppins', sans-serif;
-  font-size: clamp(1.2rem, 3.5vw, 2.8rem);
-  font-weight: 700;
-  color: rgba(255,255,255,0.2);
   text-decoration: none;
-  letter-spacing: -1px;
-  transition: color 0.3s;
 }
 
-.footer-email a:hover { color: var(--green); }
+.sticker-pill:hover {
+  background: var(--green);
+  color: var(--ink);
+}
     /* RESPONSIVE */
     @media (max-width: 768px) {
       .hero { grid-template-columns: 1fr; text-align: center; padding-top: 3rem; }
