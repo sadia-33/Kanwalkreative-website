@@ -250,14 +250,6 @@
 </footer>
 
 </body>
- <script>
-  document.querySelectorAll('.srv-item').forEach(item => {
-    item.addEventListener('click', () => {
-      document.querySelectorAll('.srv-item').forEach(i => i.classList.remove('active'));
-      document.querySelectorAll('.srv-detail').forEach(d => d.classList.remove('active'));
-      item.classList.add('active');
-      document.getElementById(item.dataset.target).classList.add('active');
-    });
-  });
-</script>
+ <script src="main.js"></script>
+</body>
 </html>
