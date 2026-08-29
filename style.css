@@ -612,16 +612,13 @@
 .drag { cursor: grab; position: absolute; }
 .drag:active { cursor: grabbing; }
 
-/* Vinyl sticker */
-.sticker-round {
-  width: 110px;
-  height: 110px;
+/* Vinyl */
+.vinyl {
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
-  box-shadow: 2px 4px 20px rgba(0,0,0,0.4);
+  box-shadow: 2px 4px 24px rgba(0,0,0,0.5);
   background: conic-gradient(
     #1a1a1a 0deg, #2a2a2a 30deg,
     #111 60deg, #333 90deg,
@@ -632,24 +629,29 @@
     #1a1a1a 360deg
   );
   animation: vinyl-spin 4s linear infinite;
+  cursor: grab;
 }
 
-.sticker-round::before {
+.vinyl::before {
   content: '';
   position: absolute;
-  width: 32px;
-  height: 32px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: var(--purple);
   border: 3px solid rgba(255,255,255,0.2);
   z-index: 2;
 }
 
-.sticker-round::after {
+.vinyl::after {
   content: '';
   position: absolute;
-  width: 8px;
-  height: 8px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #fff;
   z-index: 3;
@@ -659,9 +661,9 @@
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
-
-/* Pill stickers */
+/* Pills — scattered, not draggable */
 .sticker-pill {
+  position: absolute;
   background: var(--white);
   color: var(--purple);
   padding: 1rem 2.4rem;
@@ -674,11 +676,14 @@
   box-shadow: 2px 4px 16px rgba(0,0,0,0.2);
   white-space: nowrap;
   text-decoration: none;
+  transform: rotate(var(--r, 0deg));
+  transition: transform 0.2s, background 0.2s, color 0.2s;
 }
 
 .sticker-pill:hover {
   background: var(--green);
   color: var(--ink);
+  transform: rotate(var(--r, 0deg)) translateY(-4px);
 }
     /* RESPONSIVE */
     @media (max-width: 768px) {
