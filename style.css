@@ -603,15 +603,26 @@
 }
 
 /* Sticker area */
+/* Sticker area */
 .footer-stickers {
-  position: relative;
-  height: 220px;
-  margin: 0 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 6vw;
 }
 
-.drag { cursor: grab; position: absolute; }
-.drag:active { cursor: grabbing; }
+.footer-sticker-center {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 700px;
+}
 
+.footer-sticker-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /* Vinyl */
 .vinyl {
   width: 160px;
