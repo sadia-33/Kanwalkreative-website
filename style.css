@@ -224,14 +224,10 @@
 .checker-band {
   width: 100%;
   height: 100px;
-  background-color: var(--purple);
-  background-image:
-    linear-gradient(45deg, var(--white) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--white) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--white) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--white) 75%);
+  background-color: var(--white);
+  background-image: 
+    repeating-conic-gradient(var(--purple) 0% 25%, var(--white) 0% 50%);
   background-size: 50px 50px;
-  background-position: 0 0, 0 25px, 25px -25px, -25px 0px;
 }
     /* Industries */
 .industries {
